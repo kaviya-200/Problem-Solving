@@ -1,0 +1,40 @@
+Decresing Pyramid
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int rows = sc.nextInt();
+        int sum = 0;
+
+        for (int i = 1; i <= rows; i++) {
+            
+            for (int s = 1; s <= rows - i; s++) {
+                System.out.print(" ");
+            }
+
+            
+            for (int j = i; j >= 1; j--) {
+                System.out.print(j);
+                sum++;
+            }
+            for (int j = 2; j <= i; j++) {
+                System.out.print(j);
+                sum++;
+            }
+
+            System.out.println();
+        }
+    }
+}
+
+input:
+4
+
+Output:
+      1
+    2 1 2
+  3 2 1 2 3
+4 3 2 1 2 3 4
+
