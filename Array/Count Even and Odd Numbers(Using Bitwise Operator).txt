@@ -1,0 +1,45 @@
+Count Even and Odd Numbers(Using bitwise operator)
+
+import java.util.*;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int evencount = 0;
+        int oddcount = 0;
+
+        int[] arr = new int[n];
+        
+        for (int i = 0; i < n; i++) { 
+        int num = sc.nextInt();
+            if ((num & 1) == 0) { 
+                evencount++;
+            } else {
+                oddcount++;
+              
+        }
+        }
+        
+        System.out.println(evencount);
+            System.out.println(oddcount);
+        
+      
+    }
+}
+Sample Input 0
+
+6  
+2 7 3 8 6 4 
+Sample Output 0
+
+4
+2
+Sample Input 1
+
+4
+2 4 6 8
+Sample Output 1
+
+4
+0
